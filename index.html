@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URLingo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.png" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <h1>URLingo</h1>
+        <div class="url-input-container">
+            <input type="url" id="originalUrl" placeholder="URL을 입력하세요" required>
+            <button id="shortenBtn">단축하기</button>
+        </div>
+        <div class="result-container" id="resultContainer">
+            <p>단축된 URL:</p>
+            <div class="shortened-url-container">
+                <input type="text" id="shortenedUrl" readonly>
+                <button id="copyBtn">복사</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <p>이 사이트는 TinyURL API를 사용하여 URL을 단축합니다.</p>
+</footer>
+</html>
